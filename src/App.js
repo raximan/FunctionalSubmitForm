@@ -2,6 +2,7 @@ import "./styles.css";
 import { useState } from "react";
 import MakeForm from "./MakeForm";
 import FormData from "./FormData"
+import Footer from "./Footer";
 
 export default function App() {
   let [datas, setDatas] = useState([]);
@@ -23,6 +24,7 @@ function deleteLog (index) {
     <div className="App">
       <MakeForm addLog={addLog} />
       <FormData ınputs={datas} deleteLog={deleteLog} />
+      < Footer />
     </div>
   );
 }
